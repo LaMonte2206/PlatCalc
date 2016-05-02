@@ -31,7 +31,7 @@ export default class HomeViewControl extends BaseViewControl {
         let context = this.context,
         opt1 = context.opt1,
         opt2 = context.opt2;
-        this.context.answer = 'Adding ' + opt1 + ' and ' + opt2 + ' gives you... ' + (parseInt(opt1, 10) + parseInt(opt2,10));
+        this.context.answer = 'Adding ' + opt1 + ' and ' + opt2 + ' gives you... ' + (parseInt(opt1) + parseInt(opt2));
         this.clearNumber();   
     }
     
@@ -43,7 +43,7 @@ export default class HomeViewControl extends BaseViewControl {
         let context = this.context,
         opt1 = context.opt1,
         opt2 = context.opt2;
-        this.context.answer = 'Subtracting ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1, 10) - parseInt(opt2, 10));
+        this.context.answer = 'Subtracting ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1) - parseInt(opt2));
         this.clearNumber();
     }
     
@@ -55,7 +55,7 @@ export default class HomeViewControl extends BaseViewControl {
         let context = this.context,
         opt1 = context.opt1,
         opt2 = context.opt2;
-        this.context.answer = 'Multiplying ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1, 10) * parseInt(opt2, 10));
+        this.context.answer = 'Multiplying ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1) * parseInt(opt2));
         this.clearNumber();
     }
     
@@ -67,7 +67,7 @@ export default class HomeViewControl extends BaseViewControl {
         let context = this.context,
         opt1 = context.opt1,
         opt2 = context.opt2;
-        this.context.answer = 'Dividing ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1, 10) / parseInt(opt2, 10));
+        this.context.answer = 'Dividing ' + opt1 + ' and ' + opt2 + ' gives you...' + (parseInt(opt1) / parseInt(opt2));
     }
 }
 
