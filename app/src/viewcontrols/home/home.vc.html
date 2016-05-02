@@ -1,1 +1,13 @@
-<h1>Hello World!</h1>
+<div class="all">
+    <form>
+        <input class="input" type="number" placeholder="1st Number" plat-bind="opt1">
+        <input class="input" type="number" placeholder="2nd Number" plat-bind="opt2">
+    </form>
+    <button class="button" plat-tap="Add(opt1, opt2)">ADD</button>
+    <button class="button" plat-tap="Subtract(opt1, opt2)">SUBTRACT</button>
+    <button class="button" plat-tap="Multiply(opt1, opt2)">MULTIPLY</button>
+    <button class="button" plat-tap="Divide(opt1, opt2)">DIVIDE</button>
+    <p class="answer" plat-bind="answer">{{answer}}</p>
+    <p class="alert" plat-bind="alert">{{alert}}</p>
+</div>
+        
